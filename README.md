@@ -23,6 +23,27 @@ A **página inicial** apresenta informações relevantes, baseadas em dados atua
 #### 4. Links para Organizações Existentes
 - A página inicial contém links diretos para organizações que combatem a fome.
 
+### Estrutura
+```principal.html```
+- **Cabeçalho:** Nome da organização fictícia, Slogan e menu de navegação.
+- **Seção informativa:** Apresentação do projeto e botão de ação (redirecionamento para a página de doação).
+- **Seção estatística** Apresentação de dados sobre a insegurança alimentar.
+- **Seção de ONGs** Organizações reais relacionadas ao tema.
+- **Contato** Informações de contato listadas.
+- **Rodapé** Créditos e link para currículo;
+
+```criacaoDeConta.html```
+- Formulário de registro com campos de nome, idaide, e-mail, telefone e senha.
+
+```cadastro.html```
+- Formulário de registro de alimentos para doação, com campos de tipo de alimento, quantiade e local de retirada.
+
+```css/style.css```
+- Regras de estilo do projeto.
+
+```imagens```
+- Pasta utilizada para guardar as imagens relacionadas ao projeto.
+
 ### Autoria
 O projeto foi realizado por Pamela Berti Braz, as informações de contato estão abaixo.    
   
