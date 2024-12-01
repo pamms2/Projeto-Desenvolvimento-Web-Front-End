@@ -1,0 +1,269 @@
+/*Estilo Geral*/
+body {
+    font-family: 'Montserrat', 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    flex-direction: column;
+}
+
+p, h2 {
+    font-family: 'Montserrat', 'Raleway', sans-serif;
+}
+
+p {
+    font-size: 140%;
+}
+
+h2 {
+    font-size: 130%;
+}
+
+/*Header*/
+header {
+    font-family: 'Oswald', 'Montserrat', 'Raleway', sans-serif;
+    background-color: #c03421;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header h1 {
+    font-size: 1.3em;
+    margin: 0;
+}
+
+header nav a {
+    font-family: 'Montserrat', 'Raleway', sans-serif;
+    color: #fff;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/*Navegação*/
+nav a {
+    display: inline-flex; 
+    align-items: center; 
+    text-decoration: none; 
+    font-size: 1rem; 
+    padding: 10px;
+}
+
+nav a i {
+    font-size: 1.2rem; 
+    margin-right: 8px;
+}
+
+/*Rodapé*/
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 0px;
+    font-size: 0.8em;
+}
+
+#footer2 {
+    margin-top: 170px;
+}
+
+#footer3 {
+    margin-top: 287px;
+}
+
+/*Botão*/
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #c03421; 
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #9b1914; 
+}
+
+/*Formulários*/
+.formulario {
+    background-color: #fff;
+    padding: 30px;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #c03421;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.campo input, .campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/*Imagens e ONG*/
+img {
+    max-width: 200px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+}
+
+.ongs h2 {
+    margin-top: 30px;
+    text-align: center; 
+    font-size: 1.2em;
+    margin-bottom: 20px; 
+    color: #333; 
+}
+
+.ongs .figuras {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 40px; 
+    text-align: center; 
+    padding: 20px;
+    justify-content: space-around; 
+    align-items: center; 
+}
+
+/*Contato*/
+.contato {
+    background-color: #f4f4f4; 
+    padding: 30px;
+    margin-top: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.contato h2 {
+    font-size: 1.5em;
+    color: #333; 
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.contato li {
+    font-size: 1.1em;
+    color: #333333;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.contato li i {
+    font-size: 1.5em; 
+    margin-right: 10px;
+    color: #c03421; 
+}
+
+.contato li strong {
+    font-weight: 700; 
+    margin-right: 5px;
+}
+
+.contato li a {
+    color: #2980b9; 
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contato li a:hover {
+    text-decoration: underline; 
+}
+
+/*Página Principal*/
+#slogan {
+    font-size: 110%;
+    text-align: center;
+    margin-left: 200px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 50px;
+    height: 400px;
+    background-image: url('../imagens/Fome.jpg'); 
+    background-size: cover;
+    background-blend-mode: darken; 
+    background-color: rgba(0, 0, 0, 0.1); 
+    background-position: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.info h2 {
+    font-size: 2.5em;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    background-image: url('../imagens/Pobreza.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    background-blend-mode: darken; 
+    min-height: 400px;
+    color: #fefefe;
+    text-align: center;
+    padding: 20px;
+    position: relative; 
+}
+
+.container span {
+    font-size: 2.5em; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    font-family: 'Oswald', 'Montserrat', 'Raleway', sans-serif;
+}
+
+#fonte {
+    position: absolute; 
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-size: 1.2em; 
+}
+
+.conteudo {
+    max-width: 50%;
+    text-align: right; 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#Nome {
+    color: #f4f4f4;
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 150%;
+    text-align: left;
+}
