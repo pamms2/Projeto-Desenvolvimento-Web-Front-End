@@ -30,6 +30,7 @@ function deleteUser(userId) {
 function limparTudo() {
     if(userList.length > 0) {
         userList = [];
+        count = 1;
         localStorage.removeItem('userList');
         renderUser();
         limparPesquisa();
