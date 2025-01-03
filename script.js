@@ -3,7 +3,7 @@ var count = 1;
 
 function addUser(user, email) {
     var dataEnvio = new Date().toLocaleString();
-    if(userList.length == 0) {
+    if(userList.length === 0) {
         count = 1;
     }
     var newUser = { id: count++, user: user, email: email, dataEnvio: dataEnvio };
@@ -90,14 +90,17 @@ function getLista() {
 
 function renderUser() {
     var listaElemento = document.getElementById('lista');
-    listaElemento.innerHTML = '';
+    listaElemento.innerHTML = ''; 
 
     userList.forEach(function (usuario) {
+        console.log(usuario); 
         var listItem = document.createElement('li');
-        listItem.innerHTML =
-            `<span class="listaElemento">${usuario.user}</span> 
-             (E-mail: ${usuario.email}, Data: ${usuario.dataEnvio}) 
-             <button id="del-botao" onclick="deleteUser(${usuario.id})">Excluir</button>`;
+        listItem.innerHTML = `
+            <div class="listaElemento">
+                <span>${usuario.user} (E-mail: ${usuario.email}, Data: ${usuario.dataEnvio})</span>
+                <button id="del-botao" onclick="deleteUser(${usuario.id})">Excluir</button>
+            </div>
+        `;
         listaElemento.appendChild(listItem);
     });
 }
