@@ -48,6 +48,11 @@ function buscarUser(query) {
     if(userList.length > 0) {
         limparPesquisa();
 
+        if(query.trim() === '') {
+            alert('Por favor, insira algo para buscar.');
+            return; // Retorna sem fazer a busca
+        }
+
         var userEncontrado = userList.filter(function (user) {
             return (
                 user.user.toLowerCase().includes(query.toLowerCase())
