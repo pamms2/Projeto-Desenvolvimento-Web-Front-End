@@ -50,7 +50,7 @@ function buscarUser(query) {
 
         if(query.trim() === '') {
             alert('Por favor, insira algo para buscar.');
-            return; // Retorna sem fazer a busca
+            return; 
         }
 
         var userEncontrado = userList.filter(function (user) {
