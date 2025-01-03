@@ -114,6 +114,22 @@ footer {
     background-color: #9b1914;
 }
 
+#limparTudoBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#limparTudoBtn:hover {
+    background-color: #e74c3c;
+}
+
 /*Formulários*/
 .formulario, #pesquisaEresultado {
     background-color: #fff;
@@ -313,7 +329,6 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px; 
     margin-bottom: 5px;
     padding: 10px 20px;
     border: 1px solid #ccc;
@@ -322,12 +337,14 @@ img {
 }
 
 .listaElemento span {
-    flex: 3;
+    flex: 3; /* Nome e e-mail ocupam mais espaço */
     text-align: left;
+    font-size: 0.9em;
+    line-height: 1.2;
 }
 
 .listaElemento button {
-    flex: 1;
+    flex: 1; /* Botão ocupa menos espaço */
     background-color: #c0392b;
     color: white;
     border: none;
@@ -339,6 +356,8 @@ img {
 .listaElemento button:hover {
     background-color: #e74c3c;
 }
+
+
 
 
 
