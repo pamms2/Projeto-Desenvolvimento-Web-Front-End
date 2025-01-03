@@ -340,9 +340,18 @@ img {
     background-color: #f9f9f9;
 }
 
+#lista {
+    list-style-type: none; 
+    padding-left: 0; 
+}
+
 .listaElemento span {
     flex: 1; 
     margin: 0; 
     padding: 0;
     text-align: left; 
+}
+
+.lista h3 {
+    text-align: center;
 }
