@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined">
+    <title>Administrador</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Reaproveita
+        </h1>
+        <nav>
+            <a href="criacaoDeConta.html">
+                <i class="material-icons-outlined">account_circle</i> Criar conta
+            </a>
+            <a href="cadastro.html">
+                <i class="material-icons-outlined">restaurant</i> Cadastro de alimento
+            </a>
+            <a href="index.html">
+                <i class="material-icons-outlined">arrow_back</i> Página Inicial
+            </a>
+        </nav>
+    </header>
+    <section class="formulario">
+        <h2>Administrador</h2>
+        <p>
+            Cadastre novos usuários
+        </p>
+        <form>
+            <div class="campo">
+                <label for="user">Nome Completo:</label>
+                <input type="text" id="user" name="user" placeholder="Digite o nome de usuário" required>
+            </div>
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite o endereço de e-mail" required>
+            </div>
+            <button type="submit" class="botao">Cadastrar</button>
+            <button type="button" id="limparFormBtn" class="botao">Limpar Campos</button>
+        </form>
+    </section>
+    
+    <section id="pesquisaEresultado">
+        <section class="pesquisa">
+            <h3>Pesquisar</h3>
+            <div class="campo">
+                <input type="text" id="pesquisarInput" placeholder="Pesquisar na lista por nome de usuário">
+            </div>
+            <button type="button" id="PesquisarBtn" class="botao">Pesquisar</button>
+        </section>
+        
+        <section class="resultado-pesquisa">
+            <ul id="result"></ul> 
+        </section>
+    </section>
+
+    <section class="lista">
+        <h3>Lista de Usuários</h3>
+        <ul id="lista"></ul>
+        <button type="button" id="limparTudoBtn" class="botao">Excluir Todos</button>
+    </section>
+    
+    <footer id="footer4">
+        <p class="autoria">© 2024 Reaproveita | Desenvolvido por Pamela Berti Braz</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
