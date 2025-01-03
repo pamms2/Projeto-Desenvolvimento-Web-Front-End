@@ -68,10 +68,10 @@ function renderUserEncontrado(userEncontrado) {
     if (userEncontrado.length === 0) {
         var mensagem = document.createElement('p');
         mensagem.textContent = 'Nenhum usuário encontrado.';
-        mensagem.style.fontSize = '0.85em'; // Ajuste do tamanho da fonte
-        mensagem.style.color = 'gray';     // Cor do texto
-        mensagem.style.textAlign = 'center'; // Centralizar texto
-        mensagem.style.marginTop = '10px'; // Espaçamento superior
+        mensagem.style.fontSize = '0.85em'; 
+        mensagem.style.color = 'gray';     
+        mensagem.style.textAlign = 'center'; 
+        mensagem.style.marginTop = '10px'; 
         result.appendChild(mensagem);
     } else {
         userEncontrado.forEach(function (usuario) {
