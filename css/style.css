@@ -303,7 +303,7 @@ img {
 }
 
 #lista {
-    padding: 0 40px; 
+    padding: 0 40px;
     list-style-type: none;
     text-align: center;
     font-weight: bold;
@@ -313,12 +313,31 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px; 
     margin-bottom: 5px;
-    padding: 0 20px; 
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
 }
 
 .listaElemento span {
-    flex: 1; 
+    flex: 3;
+    text-align: left;
+}
+
+.listaElemento button {
+    flex: 1;
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.listaElemento button:hover {
+    background-color: #e74c3c;
 }
 
 
