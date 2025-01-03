@@ -3,6 +3,9 @@ var count = 1;
 
 function addUser(user, email) {
     var dataEnvio = new Date().toLocaleString();
+    if(userList.length == 0) {
+        count = 1;
+    }
     var newUser = { id: count++, user: user, email: email, dataEnvio: dataEnvio };
     userList.push(newUser);
     localStorage.setItem('userList', JSON.stringify(userList));
@@ -15,6 +18,7 @@ function deleteUser(userId) {
         return user.id !== userId;
     });
     localStorage.setItem('userList', JSON.stringify(userList));
+
     renderUser();
 
     var searchInput = document.getElementById('pesquisarInput').value;
