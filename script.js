@@ -44,18 +44,18 @@ function limparTudo() {
     }
 }
 
-function buscarUser(query) {
+function buscarUser(busca) {
     if(userList.length > 0) {
         limparPesquisa();
 
-        if(query.trim() === '') {
+        if(busca.trim() === '') {
             alert('Por favor, insira algo para buscar.');
             return; 
         }
 
         var userEncontrado = userList.filter(function (user) {
             return (
-                user.user.toLowerCase().includes(query.toLowerCase())
+                user.user.toLowerCase().includes(busca.toLowerCase())
             );
         });
 
