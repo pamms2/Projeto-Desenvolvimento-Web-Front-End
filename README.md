@@ -1,4 +1,4 @@
-# Projeto 2 - Desenvolvimento de Web Front-End
+# Projeto - Desenvolvimento de Web Front-End
 
 ## Reaproveita
 
