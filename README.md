@@ -10,7 +10,7 @@ A **página inicial** apresenta informações relevantes, baseadas em dados atua
 
 #### 1. Página Inicial Informativa
 - A página inicial apresenta informações sobre a situação da fome no Brasil, com dados do IBGE para sensibilizar os usuários sobre a importância das doações.
-- Também contém links para organizações parceiras que atuam no combate à fome, com seus logos e links para seus sites.
+- Contém links para organizações parceiras que atuam no combate à fome, incluindo seus logotipos e links para seus sites.
 
 #### 2. Criação de Conta para Doação
 - Há um formulário onde os usuários se cadastram para realizar uma doação de alimentos.
@@ -22,6 +22,13 @@ A **página inicial** apresenta informações relevantes, baseadas em dados atua
 
 #### 4. Links para Organizações Existentes
 - A página inicial contém links diretos para organizações que combatem a fome.
+
+#### 5. Painel de Administração
+- Permite o cadastro e gerenciamento de usuários.
+- Os administradores podem adicionar novos usuários com nome e e-mail.
+- Possibilidade de pesquisar usuários cadastrados.
+
+Listagem de todos os usuários cadastrados com opção de exclusão.
 
 ### Estrutura
 ```principal.html```
@@ -38,8 +45,17 @@ A **página inicial** apresenta informações relevantes, baseadas em dados atua
 ```cadastro.html```
 - Formulário de registro de alimentos para doação, com campos de tipo de alimento, quantiade e local de retirada.
 
+```admin.html```
+- Interface para administradores gerenciarem usuários.
+- Formulário de cadastro de novos usuários.
+- Campo de pesquisa para encontrar usuários cadastrados.
+- Lista de usuários com opção de exclusão.
+
 ```css/style.css```
 - Regras de estilo do projeto.
+
+```script.js```
+- Lógica para gerenciamento de usuários (adição, pesquisa e exclusão).
 
 ```imagens```
 - Pasta utilizada para guardar as imagens relacionadas ao projeto.
